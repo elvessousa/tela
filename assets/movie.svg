@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1024"
+   height="1024"
+   viewBox="0 0 270.93333 270.93333"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0beta2 (2b71d25, 2019-12-03)"
+   sodipodi:docname="movie.svg">
+  <defs
+     id="defs2">
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow"
+       id="filter1072">
+      <feFlood
+         flood-opacity="0.254902"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood1062" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite1064" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="3.5"
+         result="blur"
+         id="feGaussianBlur1066" />
+      <feOffset
+         dx="0"
+         dy="6"
+         result="offset"
+         id="feOffset1068" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite1070" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.0875"
+     inkscape:cx="92.02061"
+     inkscape:cy="599.62899"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     units="px"
+     inkscape:pagecheckerboard="true"
+     inkscape:showpageshadow="false"
+     width="1024mm"
+     showguides="true"
+     inkscape:window-width="1600"
+     inkscape:window-height="856"
+     inkscape:window-x="0"
+     inkscape:window-y="22"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="path836"
+       style="clip-rule:evenodd;display:inline;fill:#ffffff;fill-rule:evenodd;stroke-width:26.1331;stroke-linejoin:round;stroke-miterlimit:1.41421;opacity:0.70418006"
+       d="m 135.46665,16.404165 c -65.724476,0 -119.062485,53.338779 -119.062485,119.063515 0,65.72386 53.338009,119.06148 119.062485,119.06148 65.72466,0 119.06251,-53.33762 119.06251,-119.06148 0,-65.724736 -53.33785,-119.063515 -119.06251,-119.063515 z m 3.31817,19.235267 a 30.836962,30.836962 0 0 1 30.83699,30.837002 30.836962,30.836962 0 0 1 -30.83699,30.83699 30.836962,30.836962 0 0 1 -30.837,-30.83699 30.836962,30.836962 0 0 1 30.837,-30.837002 z M 66.475404,85.814714 a 30.836962,30.836962 0 0 1 30.83698,30.836976 30.836962,30.836962 0 0 1 -30.83698,30.83703 30.836962,30.836962 0 0 1 -30.837003,-30.83703 30.836962,30.836962 0 0 1 30.837003,-30.836976 z m 137.982536,6.27165 a 30.836962,30.836962 0 0 1 30.83697,30.837016 30.836962,30.836962 0 0 1 -30.83697,30.83698 30.836962,30.836962 0 0 1 -30.837,-30.83698 30.836962,30.836962 0 0 1 30.837,-30.837016 z M 137.57748,123.7856 a 10.270275,10.270275 0 0 1 0.0846,0 10.270275,10.270275 0 0 1 10.26972,10.26972 10.270275,10.270275 0 0 1 -10.26972,10.27078 10.270275,10.270275 0 0 1 -10.27077,-10.27078 10.270275,10.270275 0 0 1 10.18628,-10.26972 z m -46.014446,37.29099 a 30.836962,30.836962 0 0 1 30.837006,30.837 30.836962,30.836962 0 0 1 -30.837006,30.83699 30.836962,30.836962 0 0 1 -30.83701,-30.83699 30.836962,30.836962 0 0 1 30.83701,-30.837 z m 81.535616,6.27166 a 30.836962,30.836962 0 0 1 30.83699,30.83698 30.836962,30.836962 0 0 1 -30.83699,30.83701 30.836962,30.836962 0 0 1 -30.83702,-30.83701 30.836962,30.836962 0 0 1 30.83702,-30.83698 z"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>
