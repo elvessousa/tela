@@ -7,13 +7,14 @@
     <script defer src="render.js"></script>
   </head>
   <body>
-    <video></video>
+    <div id="screen" class="screen" data-label="No source added...">
+      <video></video>
+    </div>
     <div class="controls">
-      <button id="start" class="play" disabled>Start</button>
-      <button id="stop" class="stop" disabled>Stop</button>
-      <button id="selector" class="source">
-        Choose a video source
-      </button>
+      <button id="start" class="rec hidden action" data-tip="Record stream"></button>
+      <button id="stop" class="stop hidden action" data-tip="Stop recording"></button>
+      <button id="selector" class="selector" data-tip="Select screen"></button>
+      <div id="status" class="status hidden">Recording...</span>
     </div>
   </body>
 </html>
