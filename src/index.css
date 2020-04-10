@@ -21,7 +21,7 @@ button:disabled {
 }
 
 video {
-  background: #333 url(../assets/movie.svg) center no-repeat;
+  background: #333 url(../static/movie.svg) center no-repeat;
   background-size: 25%;
   height: 100vh;
   position: relative;
@@ -79,11 +79,11 @@ video {
 }
 
 .rec {
-  background: rgba(255, 42, 42, 0.6) url(../assets/rec.svg) center no-repeat;
+  background: rgba(255, 42, 42, 0.6) url(../static/rec.svg) center no-repeat;
 }
 
 .stop {
-  background: rgba(0, 0, 0, 0.6) url(../assets/stop.svg) center no-repeat;
+  background: rgba(0, 0, 0, 0.6) url(../static/stop.svg) center no-repeat;
 }
 
 .action {
@@ -123,7 +123,7 @@ video {
 .hidden { display: none; }
 
 .selector {
-  background: transparent url(../assets/target.svg) center no-repeat;
+  background: transparent url(../static/target.svg) center no-repeat;
   background-size: contain;
   border: 0;
   position: fixed;

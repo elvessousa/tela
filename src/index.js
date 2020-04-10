@@ -11,6 +11,7 @@ const createWindow = () => {
   const mainWindow = new BrowserWindow({
     width: 600,
     height: 365,
+    icon: __dirname + '/assets/icons/tela.png',
     webPreferences: {
       nodeIntegration: true
     }
