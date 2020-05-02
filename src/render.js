@@ -5,7 +5,7 @@ const screenElement = document.getElementById('screen');
 const statusBar = document.getElementById('status');
 const videoSelectButton = document.getElementById('selector');
 
-const { desktopCapturer, remote } = require('electron');
+const { desktopCapturer, remote, ipcRenderer } = require('electron');
 const { writeFile } = require('fs');
 const { dialog, Menu } = remote;
 
@@ -40,17 +40,17 @@ videoSelectButton.onclick = getVideoSources;
 // ----------------------------------------------------
 // Get available desktop windows
 // ----------------------------------------------------
-async function  getVideoSources() {
+async function getVideoSources() {
   const inputSources = await desktopCapturer.getSources({
-    types: ['window', 'screen']
-  })
+    types: ['window', 'screen'],
+  });
 
   const videoOptionsMenu = Menu.buildFromTemplate(
-    inputSources.map(source => {
+    inputSources.map((source) => {
       return {
         label: source.name,
-        click: () => selectSource(source)
-      }
+        click: () => selectSource(source),
+      };
     })
   );
 
@@ -67,14 +67,13 @@ async function selectSource(source) {
     video: {
       mandatory: {
         chromeMediaSource: 'desktop',
-        chromeMediaSourceId: source.id
-      }
-    }
+        chromeMediaSourceId: source.id,
+      },
+    },
   };
 
   // Create stream
-  const stream = await navigator.mediaDevices
-    .getUserMedia(constraints);
+  const stream = await navigator.mediaDevices.getUserMedia(constraints);
 
   // Stream on video element
   videoElement.srcObject = stream;
@@ -82,7 +81,7 @@ async function selectSource(source) {
   startButton.classList.remove('hidden');
 
   // Record media from stream
-  const options = { mimeType: 'video/webm; codecs=vp9' }
+  const options = { mimeType: 'video/webm; codecs=vp9' };
   mediaRecorder = new MediaRecorder(stream, options);
 
   // Event handlers
@@ -103,14 +102,14 @@ function handleDataAvailable(e) {
 // ----------------------------------------------------
 async function handleStop(e) {
   const blob = new Blob(recordedChunks, {
-    type: 'video/webm; codecs=vp9'
+    type: 'video/webm; codecs=vp9',
   });
 
   const buffer = Buffer.from(await blob.arrayBuffer());
 
   const { filePath } = await dialog.showSaveDialog({
     buttonLabel: 'Save video',
-    defaultPath: `video-${Date.now()}.webm`
+    defaultPath: `video-${Date.now()}.webm`,
   });
 
   stopButton.classList.add('hidden');
@@ -120,5 +119,11 @@ async function handleStop(e) {
   writeFile(filePath, buffer, () => {
     console.log('Video saved!');
   });
-
 }
+
+// ----------------------------------------------------
+// Actions from menu
+// ----------------------------------------------------
+ipcRenderer.on('actions', (event, action) => {
+  alert(action);
+});
